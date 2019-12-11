@@ -18,3 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 Route::resource('/info','api\InfoController');//api测试
 Route::resource('/laugh','api\LaughsController');//笑话接口
+Route::resource('/goodsadd','api\GoodsController');//笑话接口
