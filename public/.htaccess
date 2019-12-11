@@ -18,4 +18,13 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+
+    #RewriteCond %{REQUEST_FILENAME} "^.*/exam/list.html"
+	#RewriteCond %{HTTP_USER_AGENT} "^.*MSIE.*"
+	#RewriteRule (.*) list.html
+	RewriteCond %{HTTP_HOST} "^.*html"
+	RewriteRule (.*) http://www.213.com/exam/list
+
+    #RewriteCond %{HTTP_HOST} "^.*content.html.*"
+	#RewriteRule (.*) http://www.213.com/exam/content
 </IfModule>

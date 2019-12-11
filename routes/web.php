@@ -91,3 +91,9 @@ Route::any('/index/index/index','index\IndexController@index');//前台index模�
 Route::any('/index/index/recursion','index\IndexController@recursion');//前台index模块
 Route::any('/index/index/list','index\IndexController@list');//前台index模块
 Route::any('/index/index/content','index\IndexController@content');//前台index模块
+
+
+Route::any('/exam/add','exam\ExamController@add');//考试调接口
+Route::any('/exam/list','exam\ExamController@list');//考试调接口展示
+Route::any('/exam/content','exam\ExamController@content');//考试调接口详情
+
